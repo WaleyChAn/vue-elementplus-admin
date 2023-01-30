@@ -1,0 +1,31 @@
+// element-plus 颜色变量参考
+// https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss
+
+// 定义颜色
+// $--colors: (
+//   "primary": (
+//     "base": #589ef8,
+//   ),
+// );
+
+// 定义命名空间
+// --el-color-primary → --of-color-primary
+// @forward 'element-plus/theme-chalk/src/mixins/config.scss' with (
+//   $namespace: 'of'
+// );
+
+// 替换颜色
+// @forward 'element-plus/theme-chalk/src/common/var.scss' with (
+//   $colors: $--colors
+// );
+
+// 引入全局样式
+@use 'element-plus/theme-chalk/src/index.scss' as *;
+
+// 替换黑夜模式颜色
+// @forward 'element-plus/theme-chalk/src/dark/var.scss' with (
+//   $colors: $--colors
+// );
+
+// 引入黑夜模式样式
+// @use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
